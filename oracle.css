@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background */
+    background: #fdf6ff;
+    background-image: radial-gradient(#ffd6e8 10%, transparent 11%),
+                      radial-gradient(#d6f6ff 10%, transparent 11%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+}
+
+.container {
+    text-align: center;
+    background: #ffffffcc;
+    padding: 30px;
+    border-radius: 25px;
+    width: 420px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8px);
+
+    position: relative;
+}
+
+/*sticker effect (top) */
+.container::before {
+    content: "🐾🦊🐯🦁🐼";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+h1 {
+    color: #ff6fae;
+}
+
+#question {
+    margin: 20px 0;
+    color: #444;
+}
+
+button {
+    padding: 12px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+#startBtn {
+    background: #cdb4ff;
+    color: #3d2c8d;
+}
+
+.yesBtn {
+    background: #22c55e;
+    color: white;
+}
+
+.noBtn {
+    background: #ef4444;
+    color: white;
+}
+
+#resultBox button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}

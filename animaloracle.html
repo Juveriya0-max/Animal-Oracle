@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Oracle</title>
+    <link rel="stylesheet" href="oracle.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🐾 ANIMAL ORACLE!</h1>
+
+        <p id="intro">Think of an animal... I will try to guess it 🧠</p>
+
+        <h2 id="question">Click Start to begin</h2>
+
+        <!-- ANSWER BUTTONS -->
+        <div id="answerButtons" style="display:none;">
+            <button onclick="answer('yes')">Yes </button>
+            <button onclick="answer('no')">No </button>
+        </div>
+
+        <!-- RESULT BUTTONS -->
+        <div id="resultBox" style="display: none;">
+            <h3>Was I correct? 🤔</h3>
+            <button class="yesBtn" onclick="feedback(true)">Yes </button>
+            <button class="noBtn" onclick="feedback(false)">No </button>
+        </div>
+
+        <div id="learnBox" style="display:none;">
+
+            <h3>Teach me 🧠</h3>
+
+            <input id="animalInput" placeholder="Which animal?" />
+
+            <input id="factInput" placeholder="Fun fact?" />
+
+            <button onclick="saveAnimal()">Save</button>
+
+        </div>
+
+        <!-- START BUTTON -->
+        <button id="startBtn" onclick="startGame()">Start Game 🚀</button>
+
+        <script src="oracle.js"></script>
+</body>
+
+</html>
