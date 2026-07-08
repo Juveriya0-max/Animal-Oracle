@@ -23,8 +23,8 @@ An interactive animal guessing game where the AI asks questions to guess your an
 - JavaScript
 
 ## 🔗 Live Demo
+https://juveriya0-max.github.io/Animal-Oracle/
 
-[https://Juveriya0-max.github.io/animal-oracle/](https://Juveriya0-max.github.io/animal-oracle/)
 
 ## 📁 Files
 
